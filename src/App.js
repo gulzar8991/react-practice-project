@@ -16,11 +16,18 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </>
   );
+  // we can also use like this
+  // return (
+  //   <React.Fragment>
+  //     <AddUser onAddUser={addUserHandler} />
+  //     <UsersList users={usersList} />
+  //   </React.Fragment>
+  // );
 }
 
 export default App;
